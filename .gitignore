@@ -1,3 +1,6 @@
+# Maybe let's not put our access keys up there...
 config.json
-deploy/*
+
+# coconut build dirs
+.deploy/
 .build/
