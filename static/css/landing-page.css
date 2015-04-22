@@ -35,7 +35,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url("../images/wiki/Portlandbridges.jpg") no-repeat center center;
+    background: url("../images/stock/notes.jpg") no-repeat center center;
     background-size: cover;
 }
 
@@ -71,7 +71,7 @@ h6 {
     }
 
     ul.intro-social-buttons > li {
-        display: block;
+        /*display: block;*/
         margin-bottom: 20px;
         padding: 0;
     }
@@ -105,6 +105,7 @@ h6 {
 
 .section-heading {
     margin-bottom: 30px;
+    /*margin-top: 0px;*/
 }
 
 .section-heading-spacer {
@@ -161,7 +162,7 @@ h6 {
 }
 
 footer {
-    padding: 50px 0;
+    padding: 25px 0;
     background-color: #f8f8f8;
 }
 
@@ -169,14 +170,36 @@ p.copyright {
     margin: 15px 0 0;
 }
 
-.who h2 {
-    text-align: center;
-}
-
 .staff-pictures h2 {
     text-align: center;
+    /*font-weight: 500;*/
+}
+
+.staff-pictures h3 {
+    font-weight: 500;
+}
+
+.staff-pictures p {
+    text-align: left;
+    font-weight: 400;
 }
 
 .staff-pictures img {
     height: 184px;
+}
+
+h2 {
+    font-size: 41px;
+}
+
+ul.intro-social-buttons li {
+    /*padding-bottom: 2px;*/
+}
+
+ul.intro-social-buttons li a {
+    width: 160px;
+}
+
+#connect h2 {
+    padding-bottom: 15px;
 }
