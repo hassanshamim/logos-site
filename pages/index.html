@@ -1,72 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+{% block header %}
     <title>Logos Language Center</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="static/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="static/css/landing-page.css" rel="stylesheet">
+{% endblock %}
 
-    <!-- Custom Fonts -->
-    <link href="static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="http://igg.me/at/logoslangauge/x">Fundraising</a>
-                <!--<a class="navbar-brand topnav" href="#">Camp Info</a>-->
-                <a class="navbar-brand topnav" href="mailto:info@logoslanguage.org">Contact Us</a>
-                <!--<a class="navbar-brand topnav" href="#">About Portland</a>-->
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#mission">Mission</a>
-                    </li>
-                    <li>
-                        <a href="#where">Where</a>
-                    </li>
-                    <li>
-                        <a href="#summer">Summer Program</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
+{% block content %}
 
     <!-- Header -->
     <a name="about"></a>
@@ -99,7 +41,7 @@
 
     <!-- Page Content -->
 
-	<a  name="mission"></a>
+    <a  name="mission"></a>
     <div class="content-section-a">
 
         <div class="container">
@@ -175,48 +117,7 @@
     <!-- /.content-section-a -->
 
     <!--<div class="content-section-b">-->
-
-        <!--<div class="container">-->
-
-            <!--<div class="row">-->
-                <!--<div class="col-lg-12 who section-heading">-->
-                    <!--<h2>About Us</h2>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="row staff-pictures text-center">-->
-                <!--<div class="col-lg-4 well">-->
-                    <!--<img src="{% static 'images/emily_website_pic.jpg' %}" class="img-rounded">-->
-                    <!--<h2>Emily</h2>-->
-                    <!--<h3>Academic Coordinator</h3>-->
-                    <!--<p>-->
-                        <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Emily has taught English in abroad in China and South Korea, as well as working locally with-->
-                        <!--immigrant and refugee students in Portland. She is from Corvallis, OR and has an MA TESOL-->
-                        <!--from Portland State University.-->
-                    <!--</p>-->
-                    <!--<p>-->
-                        <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One of her favorite things about teaching language is the opportunity-->
-                        <!--to share and learn about culture with people from all over the world. When she is not teaching,-->
-                        <!--she loves running, cooking, and painting.-->
-                    <!--</p>-->
-                <!--</div>-->
-                <!--<div class="col-lg-4 well">-->
-                    <!--<img src="{% static 'images/lal.jpg' %}" class="img-rounded">-->
-                    <!--<h2>Alyson</h2>-->
-                    <!--<h3>Development Director</h3>-->
-                    <!--<p>-->
-                        <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alyson found herself split between two loves: teaching and non-profit work. At Logos, she found-->
-                        <!--a home for both. She uses her passion for education to fuel all of the development work she does at Logos.-->
-                    <!--</p>-->
-                <!--</div>-->
-                <!--<div class="col-lg-4 well">-->
-                    <!--<img src="http://lorempixel.com/400/200/nature" class="img-rounded">-->
-                    <!--<h2>Hassan</h2>-->
-                <!--</div>-->
-            <!--</div>-->
-
-        <!--</div>-->
-        <!--<!-- /.container -->
-
+        <!--{% include 'about_us.html' %}-->
     <!--</div>-->
 
     <div class="banner">
@@ -256,41 +157,4 @@
 
     </div>
     <!-- /.banner -->
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!--<ul class="list-inline">-->
-                        <!--<li>-->
-                            <!--<a href="#">Home</a>-->
-                        <!--</li>-->
-                        <!--<li class="footer-menu-divider">&sdot;</li>-->
-                        <!--<li>-->
-                            <!--<a href="#about">About</a>-->
-                        <!--</li>-->
-                        <!--<li class="footer-menu-divider">&sdot;</li>-->
-                        <!--<li>-->
-                            <!--<a href="#services">Services</a>-->
-                        <!--</li>-->
-                        <!--<li class="footer-menu-divider">&sdot;</li>-->
-                        <!--<li>-->
-                            <!--<a href="#contact">Contact</a>-->
-                        <!--</li>-->
-                    <!--</ul>-->
-                    <p class="copyright text-muted small">Copyright &copy; Logos Language Center 2015. All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="static/js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="static/js/bootstrap.min.js"></script>
-
-</body>
-
-</html>
+{% endblock %}
